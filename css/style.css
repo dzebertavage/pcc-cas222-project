@@ -38,7 +38,8 @@ html {
 html body {
   background-color: #545454;
   margin: 0 auto;
-  max-width: 900px;
+  /*******SLIDESHOW STYLE*******/
+  /*******SLIDESHOW STYLE*******/
 }
 html body h1,
 html body h2,
@@ -108,49 +109,238 @@ html body header figure #titlecontainer hr {
 html body main {
   background-color: white;
   padding: 10px;
+  /***** FAQ List Style *****/
+  /***** FAQ List Style *****/
+}
+html body main .collapsible {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+html body main button.active,
+html body main .collapsible:hover {
+  background-color: #592e31;
+}
+html body main .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+html body main button.active:after {
+  content: "\2212";
+}
+html body main .content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
 html body main article h1,
+html body main aside h1,
 html body main article h2,
+html body main aside h2,
 html body main article h3,
+html body main aside h3,
 html body main article h4,
+html body main aside h4,
 html body main article h5,
-html body main article h6 {
-  padding: 10px;
-}
-html body main article p {
-  line-height: 1.5em;
+html body main aside h5,
+html body main article h6,
+html body main aside h6 {
   padding: 20px;
 }
-html body main aside h1,
-html body main aside h2,
-html body main aside h3,
-html body main aside h4,
-html body main aside h5,
-html body main aside h6 {
-  padding: 10px;
-}
+html body main article p,
 html body main aside p {
   line-height: 1.5em;
   padding: 20px;
 }
-html body footer {
-  background-color: #0D2C85;
+html body main article ul#included,
+html body main aside ul#included {
+  line-height: 1.5em;
+  list-style: disc;
+  padding: 20px 20px 20px 40px;
+}
+html body main article #register-now-btn,
+html body main aside #register-now-btn {
+  margin: 0 auto;
+  display: block;
+  background-color: #C7AEAE;
+  border: 2px solid #660000;
+  border-radius: 5px;
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 1.3em;
+  padding: 0.5em;
+  width: 150px;
+}
+html body main #aith_form {
+  text-align: left;
+}
+html body main #aith_form label.description {
+  display: block;
+  font-size: 1.3em;
+  padding: 0 0 0.3em 0;
+}
+html body main #aith_form #li_1,
+html body main #aith_form #li_2,
+html body main #aith_form #li_5,
+html body main #aith_form #li_4,
+html body main #aith_form #li_6,
+html body main #aith_form #li_7,
+html body main #aith_form #li_8,
+html body main #aith_form #li_9 {
+  padding: 1em;
+}
+html body main #aith_form #li_3,
+html body main #aith_form #li_5 {
+  padding: 1em 1em 3em 1em;
+}
+html body main #aith_form input[type=text],
+html body main #aith_form input[type=tel] {
+  background-color: #C7AEAE;
+  border: 2px solid #660000;
+  border-radius: 5px;
+  font-size: 1.3em;
+  max-width: 500px;
+  padding: 0.5em;
+  width: 73%;
+}
+html body main #aith_form input[type=text]#element_2,
+html body main #aith_form input[type=tel]#element_2 {
+  width: 37px;
+}
+html body main #aith_form select,
+html body main #aith_form textarea {
+  background-color: #C7AEAE;
+  border: 2px solid #660000;
+  border-radius: 5px;
+  font-size: 1.3em;
+  padding: 0.5em;
+  width: 200px;
+}
+html body main #aith_form textarea {
+  max-width: 500px;
+  width: 73%;
+  height: 100px;
+}
+html body main #aith_form .button_text {
+  background-color: #C7AEAE;
+  border: 2px solid #660000;
+  border-radius: 5px;
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 1.3em;
+  padding: 0.5em;
+  width: 150px;
+}
+html body main #aith_form .formSubmit {
+  padding: 1em;
+}
+html body main em {
+  font-style: italic;
+}
+html body main #events {
+  border: 1px solid #303030;
+  margin: 1em auto;
+}
+html body main #events td {
+  background-color: lightgray;
+  border: 1px dashed #303030;
+  padding: 10px 70px 10px 20px;
+}
+html body main #events .rightAlign {
+  padding: 10px 20px;
+  text-align: right;
+}
+html body main img {
+  margin: 0 auto;
+  width: 100%;
+}
+html body .slider {
+  background-color: lightgray;
+  border: 2px solid #660000;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+html body .slider .left-slide,
+html body .slider .right-slide {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #444;
+  border: 2px solid #660000;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  top: 50%;
+  margin-top: -20px;
+  text-align: center;
+  line-height: 40px;
+}
+html body .slider .left-slide:hover,
+html body .slider .right-slide:hover {
+  background-color: #B36D71;
+  box-shadow: 0px 0px 10px black;
+}
+html body .slider .left-slide {
+  left: 30px;
+}
+html body .slider .right-slide {
+  right: 30px;
+}
+html body .slider .slider-items .item {
+  display: none;
+  position: relative;
+}
+html body .slider .slider-items .item.active {
+  display: block;
+}
+html body .slider .slider-items .item img {
+  max-width: 100%;
+  display: block;
+  animation: zoom 0.5s ease;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+html footer {
+  background-color: #660000;
   padding: 0 20px;
   text-align: center;
 }
-html body footer p {
-  color: #CCD9FF;
+html footer p {
+  color: #C7AEAE;
   padding: 0 0 10px 0;
   text-align: center;
 }
-html body footer .fab {
-  color: #CCD9FF;
+html footer .fab {
+  color: #C7AEAE;
   font-size: 3em;
   padding: 15px;
 }
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #22242b;
+  background-color: #660000;
   overflow: hidden;
 }
 /* Style the links inside the navigation bar */
@@ -165,20 +355,20 @@ html body footer .fab {
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #CCD9FF;
-  color: black;
+  background-color: #C7AEAE;
+  color: #000000;
 }
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #4c5a85;
-  color: white;
+  background-color: #FF0000;
+  color: #FFFFFF;
 }
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -188,7 +378,7 @@ html body footer .fab {
   }
 }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav.responsive {
     position: relative;
   }
@@ -201,5 +391,84 @@ html body footer .fab {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+/******** TABLET STYLE *********/
+@media screen and (min-width: 1080px) {
+  html body header figure #titlecontainer h1 {
+    font-size: 4em;
+  }
+  html body header figure #titlecontainer h3 {
+    font-size: 3.2em;
+  }
+  html body main article #form-container,
+  html body main aside #form-container {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  html body main article h1,
+  html body main aside h1,
+  html body main article h2,
+  html body main aside h2,
+  html body main article h3,
+  html body main aside h3,
+  html body main article h4,
+  html body main aside h4,
+  html body main article h5,
+  html body main aside h5,
+  html body main article h6,
+  html body main aside h6,
+  html body main article p,
+  html body main aside p {
+    line-height: 2em;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+  }
+  html body main article .included-container,
+  html body main aside .included-container {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  html body main article .included-container li,
+  html body main aside .included-container li {
+    list-style-position: inside;
+  }
+  html body main article #register-now-btn,
+  html body main aside #register-now-btn {
+    width: 200px;
+  }
+  html body main h1 {
+    font-size: 4em;
+  }
+  html body main h2 {
+    font-size: 3.7em;
+  }
+  html body main h3 {
+    font-size: 3.2em;
+  }
+  html body main h4 {
+    font-size: 2.9em;
+  }
+  html body main h5 {
+    font-size: 2.5em;
+  }
+  html body main h6 {
+    font-size: 2.2em;
+  }
+  html body main p {
+    font-size: 1.1em;
+  }
+  html body main button.collapsible,
+  html body main .content {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  html body main .content {
+    padding: 0;
+  }
+  html body main .faq-container {
+    margin: 0 auto;
+    text-align: center;
   }
 }
